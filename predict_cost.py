@@ -1,5 +1,5 @@
 import joblib
 
 def predict(ev):
-    rf = joblib.load("rf_model.sav")
+    rf = joblib.load("rfc_model.sav")
     return rf.predict(ev)
