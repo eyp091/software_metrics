@@ -66,10 +66,10 @@ with st.container():
             # Sonuç kartı
             st.markdown("### 📝 Sonuç")
             if prediction[0] == 1:
-                st.success("✅ Kod Değerlendirmesi: Başarılı (Successful)")
+                st.success("✅ Karmaşıklık Değerlendirmesi: Başarılı (Successful)")
                 st.balloons()  # Başarılı sonuç için kutlama efekti
             else:
-                st.error("⚠️ Kod Değerlendirmesi: Düzenlenmeli (Redesign)")
+                st.error("⚠️ Karmaşıklık Değerlendirmesi: Düzenlenmeli (Redesign)")
                 
         except Exception as e:
             st.error(f"❌ Bir hata oluştu: {e}")
